@@ -9,10 +9,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 export class AppComponent {
 
   modalRef: BsModalRef | any;
-  formObject: FormObject = {
-    firstName: '',
-    lastName: ''
-  };
+  formObject: any = {};
   correctOrderText: string = '';
   reverseOrderText: string = '';
   selectedText: string = '';
