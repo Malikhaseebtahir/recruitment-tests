@@ -1,3 +1,4 @@
+import { FullName } from './interfaces/FullName';
 import { Component, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
@@ -9,7 +10,10 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 export class AppComponent {
 
   modalRef: BsModalRef | any;
-  formObject: any = {};
+  formObject: FullName = {
+    firstName: '',
+    lastName: ''
+  };
   correctOrderText: string = '';
   reverseOrderText: string = '';
   selectedText: string = '';
